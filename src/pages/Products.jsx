@@ -16,10 +16,10 @@ const Products = () => {
   const [delayedLoading, setDelayedLoading] = useState(true);
 
   useEffect(() => {
-    setDelayedLoading(true); // Start delay
+    setDelayedLoading(true); 
     setTimeout(() => {
       fetchProducts();
-      setDelayedLoading(false); // Stop delay after 1.5 seconds
+      setDelayedLoading(false); 
     }, 1500);
   }, [fetchProducts]);
 

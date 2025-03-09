@@ -15,7 +15,7 @@ const ProductCard = ({ product, fetchProducts }) => {
     try {
       await axios.delete(`https://fakestoreapi.com/products/${product.id}`);
       
-      // Remove from Zustand store
+
       deleteProduct(product.id);
       
       toaster.create({
